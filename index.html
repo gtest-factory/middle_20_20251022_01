@@ -1,32 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta name="license" content="CC BY 4.0">
-    <meta name="author" content="fuhito.f (個人作成・非公式)">
-    <meta name="description" content="G検定OSS実践サンプル問題 - 20問中辛分野均等の実用的な練習問題集">
-    <meta name="keywords" content="G検定,AI,機械学習,OSS,実践問題,練習問題,サンプル,中辛,20問">
+    <meta name="author" content="fuhito.f（AI生成教材／個人作成）">
+    <meta name="description" content="AIが生成した非公式のG検定学習支援用問題集。全分野均等配分20問中辛セット。公式試験とは関係ありません。">
+    <meta name="keywords" content="G検定,AI,機械学習,ディープラーニング,全分野,練習問題,サンプル,中辛,20問">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="G検定OSS実践サンプル問題（20問中辛）">
-    <meta property="og:description" content="実際のOSSプロジェクトに基づく20問中辛分野均等の実用的なG検定練習問題集">
+    <meta property="og:title" content="G検定 非公式全分野練習問題（中辛・20問）｜AI生成教材">
+    <meta property="og:description" content="AIが生成した非公式のG検定学習支援用問題集。全分野均等配分20問中辛セット。公式試験とは関係ありません。">
     <meta property="og:type" content="website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{META_DESCRIPTION}}">
-    <meta name="keywords" content="G検定,JDLA,ディープラーニング,OSS実践サンプル問題,AI,機械学習">
-    <meta name="author" content="個人作成（非公式）">
     
     <!-- OGP Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{{OG_TITLE}}">
-    <meta property="og:description" content="{{OG_DESCRIPTION}}">
-    <meta property="og:site_name" content="G検定 OSS実践サンプル問題（20問中辛）">
+    <meta property="og:title" content="G検定 非公式全分野練習問題（中辛・20問）｜AI生成教材">
+    <meta property="og:description" content="AIが生成した非公式のG検定学習支援用問題集。全分野均等配分20問中辛セット。公式試験とは関係ありません。">
+    <meta property="og:site_name" content="G検定 非公式全分野練習問題（中辛・20問）">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{TW_TITLE}}">
-    <meta name="twitter:description" content="{{TW_DESCRIPTION}}">
+    <meta name="twitter:title" content="G検定 非公式全分野練習問題（中辛・20問）｜AI生成教材">
+    <meta name="twitter:description" content="AIが生成した非公式のG検定学習支援用問題集。全分野均等配分20問中辛セット。公式試験とは関係ありません。">
     
-    <title>G検定 OSS実践サンプル問題（20問中辛）（個人作成・非公式）</title>
+    <title>G検定 非公式全分野練習問題（中辛・20問）｜AI生成教材</title>
     <style>
         * {
             margin: 0;
@@ -44,7 +42,7 @@
         }
         
         .container {
-            max-width: 900px;
+            max-width: 760px;
             margin: 0 auto;
             background: white;
             border-radius: 12px;
@@ -60,7 +58,7 @@
         }
         
         .header h1 {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: #2c3e50;
             margin-bottom: 10px;
         }
@@ -88,8 +86,6 @@
         .difficulty-mild { background-color: #d4edda; color: #155724; }
         .difficulty-medium { background-color: #fff3cd; color: #856404; }
         .difficulty-hot { background-color: #f8d7da; color: #721c24; }
-        
-        /* 難易度別背景色（削除 - 問題ブロック個別に適用） */
         
         .notice {
             background: #e7f3ff;
@@ -287,7 +283,6 @@
             font-size: 1.05rem;
         }
         
-        
         .explanation ul {
             list-style: none;
             padding-left: 0;
@@ -415,8 +410,9 @@
             }
         }
         
-        /* 印刷ボタン */
+        /* 印刷ボタン（note埋め込み時は非表示） */
         .print-button {
+            display: none;
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -448,54 +444,55 @@
 <body>
     <main>
         <div class="container">
+            <h2>📚 G検定全分野均等練習20問</h2>
             <header class="header">
-                <h1>G検定 OSS実践サンプル問題（20問中辛）</h1>
+                <h1>G検定 非公式全分野練習問題（中辛・20問）</h1>
                 <div class="meta">
                     <div class="difficulty-badge difficulty-medium">難易度: 中辛</div>
-                    <div>OSS実践サンプル | 全20問</div>
+                    <div>全分野均等配分 | 全20問</div>
                     <div class="credit-badge">by fuhito.f (非公式)</div>
                 </div>
             </header>
             
             <div class="notice" role="alert">
-                <strong>⚠️ 重要な注意事項</strong><br>
-                本問題は個人が作成した非公式のOSS実践サンプル問題です。<strong>日本ディープラーニング協会（JDLA）とは一切関係ありません。</strong><br>
-                実際のG検定試験問題とは異なります。本コンテンツはAIにより自動生成されており、内容の正確性を保証するものではありません。<br>
-                必ず公式教材と併用してください。本問題の使用により生じたいかなる損害についても責任を負いません。
+                <strong>⚠️ 注意：本問題はAIが生成した非公式教材です。</strong><br>
+                G検定本試験の問題ではありません。学習支援を目的として作成されたサンプル問題集です。<br>
+                内容の正確性は保証されません。<br>
+                必ず日本ディープラーニング協会（JDLA）公式教材と併用してください。
             </div>
             
-            <!-- 問題ブロック（動的に生成） -->
+            <!-- 問題ブロック（全分野均等配分） -->
             <div class="question-block difficulty-medium">
     <div class="question-number">問題 1</div>
-    <div class="question-text">scikit-learnのGridSearchCVで交差検証を行う際、データの分割方法として適切なのはどれか。</div>
+    <div class="question-text">人工知能の定義において、「強いAI」と「弱いAI」の違いとして正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#scikit-learn</span>
-      <span class="tag">#時系列データ</span>
-      <span class="tag">#交差検証</span>
-      <span class="tag">#データ分割</span>
-      <span class="tag">#評価設計</span>
+      <span class="tag">#人工知能とは</span>
+      <span class="tag">#強いAI</span>
+      <span class="tag">#弱いAI</span>
+      <span class="tag">#汎用AI</span>
+      <span class="tag">#特化型AI</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">訓練データとテストデータをランダムに分割する</div>
-  <div class="choice" data-answer="B">時系列データの場合は時間順序を保持して分割する</div>
-  <div class="choice" data-answer="C">すべてのデータを訓練に使用し、外部データでテストする</div>
-  <div class="choice" data-answer="D">データの前処理前に分割を行う</div>
+  <div class="choice" data-answer="A">強いAIは人間レベルの知能を持つ汎用AI、弱いAIは特定タスクに特化したAI</div>
+  <div class="choice" data-answer="B">強いAIは処理速度が速く、弱いAIは処理速度が遅い</div>
+  <div class="choice" data-answer="C">強いAIは深層学習を使用し、弱いAIは機械学習を使用する</div>
+  <div class="choice" data-answer="D">強いAIは商用利用可能で、弱いAIは研究用途のみ</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: B</div>
+            <div class="correct-answer">正解: A</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>時系列データでは、未来のデータが過去のデータに基づいて予測されるため、時間順序を保持した分割（時間的順序での分割）が必要です。ランダム分割では、未来の情報が過去の学習に漏洩し、過度に楽観的な評価になってしまいます。</p>
+                <p>強いAI（AGI：Artificial General Intelligence）は人間レベルの知能を持ち、様々なタスクを実行できる汎用AIです。一方、弱いAI（ANI：Artificial Narrow Intelligence）は特定のタスクに特化したAIで、現在実用化されているAIのほとんどがこれに該当します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 時系列データでは時間漏洩が発生する→決定打</li>
-      <li><strong>選択肢B:</strong> 全データを訓練に使うと過学習のリスクが高い→致命的</li>
-      <li><strong>選択肢C:</strong> 前処理後に分割するとデータリークが発生する→本質的誤り</li>
+      <li><strong>選択肢B:</strong> 処理速度はAIの強さ・弱さの基準ではない→決定打</li>
+      <li><strong>選択肢C:</strong> 技術手法の違いではなく、汎用性の違い→致命的</li>
+      <li><strong>選択肢D:</strong> 商用利用可能性は強さ・弱さの定義ではない→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -504,19 +501,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 2</div>
-    <div class="question-text">PyTorchで勾配消失問題を防ぐための手法として正しいのはどれか。</div>
+    <div class="question-text">チューリングテストの目的と限界について正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#PyTorch</span>
-      <span class="tag">#勾配消失</span>
-      <span class="tag">#ReLU</span>
-      <span class="tag">#重み初期化</span>
-      <span class="tag">#深層学習</span>
+      <span class="tag">#人工知能とは</span>
+      <span class="tag">#チューリングテスト</span>
+      <span class="tag">#AI評価</span>
+      <span class="tag">#知能の定義</span>
+      <span class="tag">#哲学的問題</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">学習率を大きく設定する</div>
-  <div class="choice" data-answer="B">ReLU活性化関数を使用し、適切な重み初期化を行う</div>
-  <div class="choice" data-answer="C">バッチサイズを小さく設定する</div>
-  <div class="choice" data-answer="D">エポック数を増やす</div>
+  <div class="choice" data-answer="A">機械の知能を客観的に測定できる完全なテストである</div>
+  <div class="choice" data-answer="B">人間と区別できない対話能力を評価するが、真の知能を測れるとは限らない</div>
+  <div class="choice" data-answer="C">言語処理能力のみを評価し、他の知能要素は考慮しない</div>
+  <div class="choice" data-answer="D">現在のAIは全てチューリングテストを通過している</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -524,15 +521,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>勾配消失問題を防ぐには、ReLU活性化関数（勾配が0または1）を使用し、Xavier初期化やHe初期化などの適切な重み初期化を行うことが重要です。これにより、勾配が層を伝播する際に適切に保持されます。</p>
+                <p>チューリングテストは人間と区別できない対話能力を評価するテストですが、真の知能や意識を測れるとは限りません。単に対話パターンを模倣しているだけの可能性もあり、中国語の部屋問題などでその限界が指摘されています。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 学習率を大きくすると発散のリスクが高い→決定打</li>
-      <li><strong>選択肢B:</strong> バッチサイズは勾配消失と直接関係ない→致命的</li>
-      <li><strong>選択肢C:</strong> エポック数は収束に関係するが勾配消失とは別問題→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 完全なテストではなく限界がある→決定打</li>
+      <li><strong>選択肢C:</strong> 対話能力全般を評価する→致命的</li>
+      <li><strong>選択肢D:</strong> 現在のAIはまだ通過していない→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -541,19 +538,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 3</div>
-    <div class="question-text">MLflowでモデルバージョニングを行う際、モデルの登録に必要な情報はどれか。</div>
+    <div class="question-text">フレーム問題の本質的な課題はどれか。</div>
     <div class="tags">
-      <span class="tag">#MLflow</span>
-      <span class="tag">#モデルバージョニング</span>
-      <span class="tag">#メタデータ</span>
-      <span class="tag">#再現性</span>
-      <span class="tag">#デプロイ</span>
+      <span class="tag">#人工知能とは</span>
+      <span class="tag">#フレーム問題</span>
+      <span class="tag">#知識表現</span>
+      <span class="tag">#推論</span>
+      <span class="tag">#AI限界</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">モデルファイルのパスのみ</div>
-  <div class="choice" data-answer="B">モデルファイル、メタデータ、実行環境情報</div>
-  <div class="choice" data-answer="C">モデルの精度のみ</div>
-  <div class="choice" data-answer="D">学習に使用したデータセットのみ</div>
+  <div class="choice" data-answer="A">計算リソースの不足</div>
+  <div class="choice" data-answer="B">行動の結果として関連する事実と無関係な事実を区別できない</div>
+  <div class="choice" data-answer="C">学習データの不足</div>
+  <div class="choice" data-answer="D">アルゴリズムの複雑さ</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -561,15 +558,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>MLflowでモデルを登録する際は、モデルファイル、メタデータ（パラメータ、メトリクス）、実行環境情報（Pythonバージョン、依存関係）を含める必要があります。これにより、モデルの再現性とデプロイ時の環境整合性を確保できます。</p>
+                <p>フレーム問題は、AIが行動の結果として関連する事実と無関係な事実を区別できないという根本的な問題です。例えば、ロボットがコーヒーを運ぶ際、コーヒーが冷めることは関連するが、天井の色が変わることは無関係という判断ができない問題です。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> パスのみでは再現性が確保できない→決定打</li>
-      <li><strong>選択肢B:</strong> 精度のみではモデルの詳細が不明→致命的</li>
-      <li><strong>選択肢C:</strong> データセットのみではモデル自体が不明→本質的誤り</li>
+      <li><strong>選択肢A:</strong> リソース問題ではなく論理的問題→決定打</li>
+      <li><strong>選択肢C:</strong> データ問題ではなく知識表現の問題→致命的</li>
+      <li><strong>選択肢D:</strong> アルゴリズムの複雑さではなく根本的限界→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -578,19 +575,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 4</div>
-    <div class="question-text">TensorRTでINT8量子化を行う際の制約はどれか。</div>
+    <div class="question-text">エキスパートシステムの知識表現において、ルールベースシステムの特徴はどれか。</div>
     <div class="tags">
-      <span class="tag">#TensorRT</span>
-      <span class="tag">#INT8量子化</span>
-      <span class="tag">#キャリブレーション</span>
-      <span class="tag">#最適化</span>
-      <span class="tag">#推論</span>
+      <span class="tag">#人工知能をめぐる動向</span>
+      <span class="tag">#エキスパートシステム</span>
+      <span class="tag">#知識表現</span>
+      <span class="tag">#ルールベース</span>
+      <span class="tag">#推論エンジン</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべてのレイヤーがINT8に対応している</div>
-  <div class="choice" data-answer="B">動的レンジのキャリブレーションが必要</div>
-  <div class="choice" data-answer="C">FP32精度と完全に同じ結果が得られる</div>
-  <div class="choice" data-answer="D">バッチサイズは1のみサポート</div>
+  <div class="choice" data-answer="A">大量のデータから自動的にパターンを学習する</div>
+  <div class="choice" data-answer="B">if-then形式のルールで専門知識を表現し、推論エンジンで結論を導く</div>
+  <div class="choice" data-answer="C">ニューラルネットワークを使用して知識を表現する</div>
+  <div class="choice" data-answer="D">統計的手法で確率的な推論を行う</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -598,15 +595,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>TensorRTのINT8量子化では、動的レンジのキャリブレーションが必要です。代表的なデータセットを使用して各レイヤーの活性化値の分布を分析し、適切な量子化パラメータを決定する必要があります。</p>
+                <p>ルールベースシステムは、if-then形式のルールで専門知識を表現し、推論エンジン（推論機構）を使って結論を導くシステムです。エキスパートの知識を明示的にルール化し、論理的推論によって問題解決を行います。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 一部レイヤーはINT8非対応→決定打</li>
-      <li><strong>選択肢B:</strong> 量子化により若干の精度劣化は避けられない→致命的</li>
-      <li><strong>選択肢C:</strong> バッチサイズは複数サポート→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 自動学習ではなく明示的ルール→決定打</li>
+      <li><strong>選択肢C:</strong> ニューラルネットワークではなくルール→致命的</li>
+      <li><strong>選択肢D:</strong> 統計的ではなく論理的推論→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -615,19 +612,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 5</div>
-    <div class="question-text">pandasでカテゴリ変数をエンコーディングする際、データリークを防ぐ正しい方法はどれか。</div>
+    <div class="question-text">探索アルゴリズムにおいて、幅優先探索の特徴はどれか。</div>
     <div class="tags">
-      <span class="tag">#pandas</span>
-      <span class="tag">#カテゴリ変数</span>
-      <span class="tag">#エンコーディング</span>
-      <span class="tag">#データリーク</span>
-      <span class="tag">#前処理</span>
+      <span class="tag">#人工知能をめぐる動向</span>
+      <span class="tag">#探索アルゴリズム</span>
+      <span class="tag">#幅優先探索</span>
+      <span class="tag">#BFS</span>
+      <span class="tag">#グラフ探索</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">全データセットでラベルエンコーディングを適用する</div>
-  <div class="choice" data-answer="B">訓練データでfitし、テストデータにtransformを適用する</div>
-  <div class="choice" data-answer="C">各カテゴリにランダムな数値を割り当てる</div>
-  <div class="choice" data-answer="D">テストデータの情報も含めてエンコーディングする</div>
+  <div class="choice" data-answer="A">最も深いノードから探索を開始する</div>
+  <div class="choice" data-answer="B">同じ深さのノードを全て探索してから次の深さに進む</div>
+  <div class="choice" data-answer="C">ランダムにノードを選択して探索する</div>
+  <div class="choice" data-answer="D">評価関数に基づいて最適なノードを選択する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -635,15 +632,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>カテゴリ変数のエンコーディングでは、訓練データのみでエンコーダーをfitし、そのエンコーダーを使ってテストデータにtransformを適用する必要があります。テストデータの情報を含めてエンコーディングすると、データリークが発生します。</p>
+                <p>幅優先探索（BFS）は、同じ深さのノードを全て探索してから次の深さに進む探索手法です。キュー（FIFO）を使用して実装され、最短経路を保証しますが、メモリ使用量が多くなるという特徴があります。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 全データセットでエンコーディングするとデータリークが発生→決定打</li>
-      <li><strong>選択肢B:</strong> ランダムな数値では意味のある情報が失われる→致命的</li>
-      <li><strong>選択肢C:</strong> テストデータの情報を含めると過度に楽観的な評価になる→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 最も深いノードからではなく浅いノードから→決定打</li>
+      <li><strong>選択肢C:</strong> ランダムではなく系統的探索→致命的</li>
+      <li><strong>選択肢D:</strong> 評価関数はA*アルゴリズムの特徴→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -652,35 +649,35 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 6</div>
-    <div class="question-text">matplotlibで複数のサブプロットを作成する際、メモリ効率を考慮した正しい方法はどれか。</div>
+    <div class="question-text">ビッグデータの3V特性について正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#matplotlib</span>
-      <span class="tag">#サブプロット</span>
-      <span class="tag">#メモリ効率</span>
-      <span class="tag">#Figure</span>
-      <span class="tag">#可視化</span>
+      <span class="tag">#人工知能をめぐる動向</span>
+      <span class="tag">#ビッグデータ</span>
+      <span class="tag">#3V特性</span>
+      <span class="tag">#Volume</span>
+      <span class="tag">#Variety</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべてのサブプロットを一つのFigureに描画する</div>
-  <div class="choice" data-answer="B">各サブプロットごとに新しいFigureを作成する</div>
-  <div class="choice" data-answer="C">plt.subplots()を使用し、不要なAxesは削除する</div>
-  <div class="choice" data-answer="D">すべてのプロットをメモリに保持する</div>
+  <div class="choice" data-answer="A">Volume（量）、Velocity（速度）、Variety（多様性）</div>
+  <div class="choice" data-answer="B">Value（価値）、Velocity（速度）、Volume（量）</div>
+  <div class="choice" data-answer="C">Variety（多様性）、Value（価値）、Velocity（速度）</div>
+  <div class="choice" data-answer="D">Volume（量）、Variety（多様性）、Velocity（速度）</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: C</div>
+            <div class="correct-answer">正解: A</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>matplotlibでメモリ効率を考慮する場合、plt.subplots()で必要な数のサブプロットを作成し、使用しないAxesは削除（remove()）するのが適切です。これにより、メモリ使用量を最小限に抑えながら効率的にプロットできます。</p>
+                <p>ビッグデータの3V特性は、Volume（量：データの規模が大きい）、Velocity（速度：データの生成・処理速度が速い）、Variety（多様性：データの種類が多様）です。これらが従来のデータ処理技術では対応困難な要因となっています。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 一つのFigureに描画しすぎるとメモリを大量消費→決定打</li>
-      <li><strong>選択肢B:</strong> 各サブプロットごとにFigureを作成すると非効率→致命的</li>
-      <li><strong>選択肢C:</strong> すべてをメモリに保持するとメモリ不足の原因→本質的誤り</li>
+      <li><strong>選択肢B:</strong> Valueは4Vの一つだが3Vには含まれない→決定打</li>
+      <li><strong>選択肢C:</strong> 順序が異なる→致命的</li>
+      <li><strong>選択肢D:</strong> 順序が異なる→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -689,35 +686,35 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 7</div>
-    <div class="question-text">Hugging Face TransformersでBERTモデルを使用する際、最大トークン長の制限について正しいのはどれか。</div>
+    <div class="question-text">機械学習における過学習の原因として最も適切なのはどれか。</div>
     <div class="tags">
-      <span class="tag">#Transformers</span>
-      <span class="tag">#BERT</span>
-      <span class="tag">#トークン長</span>
-      <span class="tag">#制限</span>
-      <span class="tag">#NLP</span>
+      <span class="tag">#機械学習の概要</span>
+      <span class="tag">#過学習</span>
+      <span class="tag">#オーバーフィッティング</span>
+      <span class="tag">#汎化性能</span>
+      <span class="tag">#正則化</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">最大トークン長に制限はない</div>
-  <div class="choice" data-answer="B">最大512トークンまで処理可能</div>
-  <div class="choice" data-answer="C">最大1024トークンまで処理可能</div>
-  <div class="choice" data-answer="D">モデルによって最大トークン長が異なる</div>
+  <div class="choice" data-answer="A">学習データが多すぎる</div>
+  <div class="choice" data-answer="B">モデルが複雑すぎて訓練データに過度に適合してしまう</div>
+  <div class="choice" data-answer="C">学習率が低すぎる</div>
+  <div class="choice" data-answer="D">特徴量が少なすぎる</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: D</div>
+            <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Hugging Face TransformersのBERTモデルでは、モデルによって最大トークン長が異なります。BERT-baseは512トークン、BERT-largeは512トークン、Longformerは4096トークンなど、モデルアーキテクチャに応じて制限が設定されています。</p>
+                <p>過学習（オーバーフィッティング）は、モデルが複雑すぎて訓練データに過度に適合し、未知のデータに対する汎化性能が低下する現象です。正則化、ドロップアウト、データ拡張などの手法で防ぐことができます。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> トークン長には必ず制限がある→決定打</li>
-      <li><strong>選択肢B:</strong> すべてのBERTモデルが512トークンではない→致命的</li>
-      <li><strong>選択肢C:</strong> モデルによって制限が異なる→本質的誤り</li>
+      <li><strong>選択肢A:</strong> データが多いと過学習しにくい→決定打</li>
+      <li><strong>選択肢C:</strong> 学習率は収束速度に影響するが過学習の直接原因ではない→致命的</li>
+      <li><strong>選択肢D:</strong> 特徴量が少ないとアンダーフィッティング→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -726,35 +723,35 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 8</div>
-    <div class="question-text">OpenCVで画像の幾何変換を行う際、アフィン変換と射影変換の違いはどれか。</div>
+    <div class="question-text">次元の呪い（次元の災い）について正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#OpenCV</span>
-      <span class="tag">#幾何変換</span>
-      <span class="tag">#アフィン変換</span>
-      <span class="tag">#射影変換</span>
-      <span class="tag">#画像処理</span>
+      <span class="tag">#機械学習の概要</span>
+      <span class="tag">#次元の呪い</span>
+      <span class="tag">#次元削減</span>
+      <span class="tag">#特徴選択</span>
+      <span class="tag">#高次元データ</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">アフィン変換は平行線を保持し、射影変換は保持しない</div>
-  <div class="choice" data-answer="B">射影変換は平行線を保持し、アフィン変換は保持しない</div>
-  <div class="choice" data-answer="C">両方とも平行線を保持する</div>
-  <div class="choice" data-answer="D">両方とも平行線を保持しない</div>
+  <div class="choice" data-answer="A">次元数が増えると計算時間が短くなる</div>
+  <div class="choice" data-answer="B">次元数が増えるとデータの密度が低下し、学習が困難になる</div>
+  <div class="choice" data-answer="C">次元数が増えるとモデルの精度が必ず向上する</div>
+  <div class="choice" data-answer="D">次元数は機械学習の性能に影響しない</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: A</div>
+            <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>アフィン変換は平行線を保持し、長さ比や角度比も保持します。一方、射影変換（ホモグラフィ）は平行線を保持せず、遠近感による変形を表現できます。アフィン変換は射影変換の特殊な場合です。</p>
+                <p>次元の呪いは、次元数が増えるとデータの密度が低下し、学習が困難になる現象です。高次元空間では、データポイント間の距離が均一化され、統計的な有意性が失われやすくなります。次元削減や特徴選択で対処します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 射影変換は平行線を保持しない→決定打</li>
-      <li><strong>選択肢B:</strong> アフィン変換は平行線を保持する→致命的</li>
-      <li><strong>選択肢C:</strong> 両方とも平行線を保持するわけではない→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 次元数が増えると計算時間は増加→決定打</li>
+      <li><strong>選択肢C:</strong> 次元数が増えても必ずしも精度向上しない→致命的</li>
+      <li><strong>選択肢D:</strong> 次元数は性能に大きく影響する→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -763,19 +760,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 9</div>
-    <div class="question-text">Horovodで分散学習を行う際、勾配の同期方法はどれか。</div>
+    <div class="question-text">バンディット問題におけるε-greedy法の特徴はどれか。</div>
     <div class="tags">
-      <span class="tag">#Horovod</span>
-      <span class="tag">#分散学習</span>
-      <span class="tag">#AllReduce</span>
-      <span class="tag">#勾配同期</span>
-      <span class="tag">#並列処理</span>
+      <span class="tag">#機械学習の概要</span>
+      <span class="tag">#バンディット問題</span>
+      <span class="tag">#ε-greedy法</span>
+      <span class="tag">#探索と活用</span>
+      <span class="tag">#強化学習</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">各ワーカーが独立して勾配を計算する</div>
-  <div class="choice" data-answer="B">AllReduce操作で勾配を平均化する</div>
-  <div class="choice" data-answer="C">マスター・ワーカー方式で勾配を集約する</div>
-  <div class="choice" data-answer="D">勾配の同期は不要である</div>
+  <div class="choice" data-answer="A">常に最適な選択肢を選択する</div>
+  <div class="choice" data-answer="B">確率εでランダム選択、確率(1-ε)で最適選択を行う</div>
+  <div class="choice" data-answer="C">全ての選択肢を等確率で選択する</div>
+  <div class="choice" data-answer="D">過去の結果に基づいて確率的に選択する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -783,15 +780,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Horovodでは、各ワーカーが計算した勾配をAllReduce操作で平均化し、同期します。これにより、全ワーカーの勾配を統合し、一貫したモデル更新を実現します。AllReduceは効率的な分散通信アルゴリズムです。</p>
+                <p>ε-greedy法は、確率εでランダム選択（探索）、確率(1-ε)で最適選択（活用）を行う手法です。探索と活用のバランスを取り、バンディット問題における累積リグレットを最小化することを目指します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 独立計算では分散学習にならない→決定打</li>
-      <li><strong>選択肢B:</strong> マスター・ワーカー方式は非効率→致命的</li>
-      <li><strong>選択肢C:</strong> 勾配同期は分散学習の核心→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 常に最適選択では探索ができない→決定打</li>
+      <li><strong>選択肢C:</strong> 等確率選択では活用ができない→致命的</li>
+      <li><strong>選択肢D:</strong> 過去の結果に基づくのは別の手法→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -800,19 +797,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 10</div>
-    <div class="question-text">SHAPでモデルの説明可能性を分析する際、TreeExplainerの適用条件はどれか。</div>
+    <div class="question-text">ディープラーニングにおけるバックプロパゲーションの役割はどれか。</div>
     <div class="tags">
-      <span class="tag">#SHAP</span>
-      <span class="tag">#TreeExplainer</span>
-      <span class="tag">#ツリーベース</span>
-      <span class="tag">#説明可能性</span>
-      <span class="tag">#モデル解釈</span>
+      <span class="tag">#ディープラーニングの概要</span>
+      <span class="tag">#バックプロパゲーション</span>
+      <span class="tag">#勾配降下法</span>
+      <span class="tag">#重み更新</span>
+      <span class="tag">#誤差逆伝播</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべての機械学習モデルに適用可能</div>
-  <div class="choice" data-answer="B">ツリーベースのモデル（Random Forest、XGBoost等）にのみ適用可能</div>
-  <div class="choice" data-answer="C">深層学習モデルのみに適用可能</div>
-  <div class="choice" data-answer="D">線形モデルのみに適用可能</div>
+  <div class="choice" data-answer="A">入力データを前処理する</div>
+  <div class="choice" data-answer="B">出力層から入力層に向かって誤差を逆伝播し、重みを更新する</div>
+  <div class="choice" data-answer="C">ネットワークの構造を最適化する</div>
+  <div class="choice" data-answer="D">活性化関数を選択する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -820,15 +817,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>SHAPのTreeExplainerは、ツリーベースのモデル（Random Forest、XGBoost、LightGBM、CatBoost等）にのみ適用可能です。これらのモデルでは、ツリー構造を利用して効率的にSHAP値を計算できます。</p>
+                <p>バックプロパゲーション（誤差逆伝播法）は、出力層から入力層に向かって誤差を逆伝播し、各重みの勾配を計算して重みを更新するアルゴリズムです。連鎖律を使用して効率的に勾配を計算できます。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> すべてのモデルに適用できるわけではない→決定打</li>
-      <li><strong>選択肢B:</strong> 深層学習モデルには別のExplainerが必要→致命的</li>
-      <li><strong>選択肢C:</strong> 線形モデルにはLinearExplainerを使用→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 前処理ではなく学習アルゴリズム→決定打</li>
+      <li><strong>選択肢C:</strong> 構造最適化ではなく重み更新→致命的</li>
+      <li><strong>選択肢D:</strong> 活性化関数選択ではなく重み更新→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -837,19 +834,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 11</div>
-    <div class="question-text">Weights & Biasesで実験を追跡する際、wandb.log()の正しい使用方法はどれか。</div>
+    <div class="question-text">CNNにおけるプーリング層の役割はどれか。</div>
     <div class="tags">
-      <span class="tag">#Weights & Biases</span>
-      <span class="tag">#wandb.log</span>
-      <span class="tag">#実験追跡</span>
-      <span class="tag">#メトリクス</span>
-      <span class="tag">#可視化</span>
+      <span class="tag">#ディープラーニングの概要</span>
+      <span class="tag">#CNN</span>
+      <span class="tag">#プーリング層</span>
+      <span class="tag">#特徴マップ</span>
+      <span class="tag">#次元削減</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">実験開始時に一度だけ呼び出す</div>
-  <div class="choice" data-answer="B">各エポックまたはバッチごとに呼び出してメトリクスを記録する</div>
-  <div class="choice" data-answer="C">実験終了時に一度だけ呼び出す</div>
-  <div class="choice" data-answer="D">エラーが発生した時のみ呼び出す</div>
+  <div class="choice" data-answer="A">画像の色を変換する</div>
+  <div class="choice" data-answer="B">特徴マップのサイズを縮小し、位置不変性を向上させる</div>
+  <div class="choice" data-answer="C">重みを初期化する</div>
+  <div class="choice" data-answer="D">学習率を調整する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -857,15 +854,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>wandb.log()は、各エポックやバッチごとに呼び出してメトリクス（損失、精度等）を記録するために使用します。これにより、学習過程の詳細な追跡と可視化が可能になります。</p>
+                <p>プーリング層は、特徴マップのサイズを縮小し、位置不変性を向上させる役割があります。Max PoolingやAverage Poolingにより、局所的な特徴の最大値や平均値を取り、計算量を削減しながら重要な特徴を保持します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 一度だけでは学習過程が追跡できない→決定打</li>
-      <li><strong>選択肢B:</strong> 終了時のみでは詳細な分析ができない→致命的</li>
-      <li><strong>選択肢C:</strong> エラー時のみでは実験追跡にならない→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 色変換ではなく特徴抽出→決定打</li>
+      <li><strong>選択肢C:</strong> 重み初期化は別の処理→致命的</li>
+      <li><strong>選択肢D:</strong> 学習率調整は最適化の役割→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -874,19 +871,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 12</div>
-    <div class="question-text">XGBoostで過学習を防ぐためのパラメータ設定として適切なのはどれか。</div>
+    <div class="question-text">RNNにおける勾配消失問題の原因はどれか。</div>
     <div class="tags">
-      <span class="tag">#XGBoost</span>
-      <span class="tag">#過学習</span>
-      <span class="tag">#learning_rate</span>
-      <span class="tag">#early_stopping</span>
-      <span class="tag">#正則化</span>
+      <span class="tag">#ディープラーニングの概要</span>
+      <span class="tag">#RNN</span>
+      <span class="tag">#勾配消失問題</span>
+      <span class="tag">#時系列データ</span>
+      <span class="tag">#長期依存</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">learning_rateを大きくし、n_estimatorsを増やす</div>
-  <div class="choice" data-answer="B">learning_rateを小さくし、early_stoppingを使用する</div>
-  <div class="choice" data-answer="C">max_depthを大きくし、min_child_weightを小さくする</div>
-  <div class="choice" data-answer="D">subsampleを1.0に設定し、colsample_bytreeを1.0にする</div>
+  <div class="choice" data-answer="A">学習率が高すぎる</div>
+  <div class="choice" data-answer="B">時系列の長い依存関係で勾配が指数関数的に減衰する</div>
+  <div class="choice" data-answer="C">データが少なすぎる</div>
+  <div class="choice" data-answer="D">活性化関数が不適切</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -894,15 +891,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>XGBoostで過学習を防ぐには、learning_rateを小さくし（例：0.01-0.1）、early_stoppingを使用して最適なn_estimatorsを決定します。これにより、モデルの複雑さを適切に制御し、過学習を防げます。</p>
+                <p>RNNの勾配消失問題は、時系列の長い依存関係で勾配が指数関数的に減衰することが原因です。時間ステップが長くなるほど、過去の情報が現在に伝わりにくくなり、学習が困難になります。LSTMやGRUで対処します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> learning_rateを大きくすると過学習のリスクが高い→決定打</li>
-      <li><strong>選択肢B:</strong> max_depthを大きくするとモデルが複雑になりすぎる→致命的</li>
-      <li><strong>選択肢C:</strong> subsample=1.0では正則化効果がない→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 学習率は収束速度に影響するが勾配消失の直接原因ではない→決定打</li>
+      <li><strong>選択肢C:</strong> データ量は別の問題→致命的</li>
+      <li><strong>選択肢D:</strong> 活性化関数は影響するが根本原因ではない→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -911,35 +908,35 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 13</div>
-    <div class="question-text">Kubeflow Pipelinesでパイプラインを実行する際、コンポーネント間のデータ受け渡し方法はどれか。</div>
+    <div class="question-text">ドロップアウトの正しい使用方法はどれか。</div>
     <div class="tags">
-      <span class="tag">#Kubeflow</span>
-      <span class="tag">#Pipelines</span>
-      <span class="tag">#Artifact Store</span>
-      <span class="tag">#データ受け渡し</span>
-      <span class="tag">#MLOps</span>
+      <span class="tag">#ディープラーニングの要素技術</span>
+      <span class="tag">#ドロップアウト</span>
+      <span class="tag">#正則化</span>
+      <span class="tag">#過学習防止</span>
+      <span class="tag">#ランダム無効化</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">ファイルシステムを直接共有する</div>
-  <div class="choice" data-answer="B">KubernetesのVolumeを使用する</div>
-  <div class="choice" data-answer="C">コンポーネント間で直接メモリを共有する</div>
-  <div class="choice" data-answer="D">KubeflowのArtifact Storeを使用する</div>
+  <div class="choice" data-answer="A">推論時のみ使用する</div>
+  <div class="choice" data-answer="B">学習時はランダムにニューロンを無効化し、推論時は全ニューロンを使用する</div>
+  <div class="choice" data-answer="C">学習時と推論時で同じ確率でニューロンを無効化する</div>
+  <div class="choice" data-answer="D">特定の層のみに適用する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: D</div>
+            <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Kubeflow Pipelinesでは、コンポーネント間のデータ受け渡しにArtifact Storeを使用します。これにより、データのバージョン管理、メタデータの追跡、再利用性を確保できます。</p>
+                <p>ドロップアウトは学習時にランダムにニューロンを無効化し、推論時は全ニューロンを使用します。学習時は過学習を防ぎ、推論時は全ニューロンの能力を活用することで、汎化性能を向上させます。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> ファイルシステム直接共有は非推奨→決定打</li>
-      <li><strong>選択肢B:</strong> Kubernetes Volumeは低レベルすぎる→致命的</li>
-      <li><strong>選択肢C:</strong> メモリ直接共有はスケーラビリティに問題→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 推論時のみでは正則化効果がない→決定打</li>
+      <li><strong>選択肢C:</strong> 推論時も無効化すると性能が低下→致命的</li>
+      <li><strong>選択肢D:</strong> 全層に適用可能→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -948,19 +945,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 14</div>
-    <div class="question-text">ONNXモデルを異なるフレームワーク間で変換する際の制約はどれか。</div>
+    <div class="question-text">バッチ正規化の効果として正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#ONNX</span>
-      <span class="tag">#モデル変換</span>
-      <span class="tag">#演算子サポート</span>
-      <span class="tag">#互換性</span>
-      <span class="tag">#推論</span>
+      <span class="tag">#ディープラーニングの要素技術</span>
+      <span class="tag">#バッチ正規化</span>
+      <span class="tag">#Batch Normalization</span>
+      <span class="tag">#内部共変量シフト</span>
+      <span class="tag">#学習安定化</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべての演算子が変換可能</div>
-  <div class="choice" data-answer="B">ONNXでサポートされていない演算子は変換できない</div>
-  <div class="choice" data-answer="C">モデルの精度は必ず保持される</div>
-  <div class="choice" data-answer="D">変換は常に成功する</div>
+  <div class="choice" data-answer="A">学習率を自動的に調整する</div>
+  <div class="choice" data-answer="B">内部共変量シフトを抑制し、学習を安定化させる</div>
+  <div class="choice" data-answer="C">ネットワークの層数を増やす</div>
+  <div class="choice" data-answer="D">活性化関数を変更する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -968,15 +965,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>ONNXモデルの変換では、ONNXでサポートされていない演算子（カスタム演算子など）は変換できません。変換前に、使用している演算子がONNXでサポートされているかを確認する必要があります。</p>
+                <p>バッチ正規化は、各層の入力を正規化することで内部共変量シフトを抑制し、学習を安定化させます。これにより、高い学習率でも学習でき、ドロップアウトの必要性も減り、学習速度と汎化性能が向上します。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> すべての演算子が変換できるわけではない→決定打</li>
-      <li><strong>選択肢B:</strong> 精度は変換過程で若干変動する可能性がある→致命的</li>
-      <li><strong>選択肢C:</strong> 変換は失敗する場合もある→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 学習率調整は別の最適化手法→決定打</li>
+      <li><strong>選択肢C:</strong> 層数増加は別の設計要素→致命的</li>
+      <li><strong>選択肢D:</strong> 活性化関数変更は別の設計要素→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -985,19 +982,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 15</div>
-    <div class="question-text">Apache Sparkで大容量データを処理する際、パーティション数の決定要因はどれか。</div>
+    <div class="question-text">Adam最適化アルゴリズムの特徴はどれか。</div>
     <div class="tags">
-      <span class="tag">#Apache Spark</span>
-      <span class="tag">#パーティション</span>
-      <span class="tag">#CPUコア数</span>
-      <span class="tag">#データサイズ</span>
-      <span class="tag">#並列処理</span>
+      <span class="tag">#ディープラーニングの要素技術</span>
+      <span class="tag">#Adam</span>
+      <span class="tag">#最適化アルゴリズム</span>
+      <span class="tag">#適応的学習率</span>
+      <span class="tag">#モーメンタム</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">データサイズのみ</div>
-  <div class="choice" data-answer="B">クラスターのCPUコア数とデータサイズ</div>
-  <div class="choice" data-answer="C">メモリサイズのみ</div>
-  <div class="choice" data-answer="D">ネットワーク帯域のみ</div>
+  <div class="choice" data-answer="A">固定の学習率を使用する</div>
+  <div class="choice" data-answer="B">モーメンタムとRMSpropを組み合わせた適応的学習率アルゴリズム</div>
+  <div class="choice" data-answer="C">勾配の方向のみを考慮する</div>
+  <div class="choice" data-answer="D">バッチサイズを自動調整する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -1005,15 +1002,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Sparkのパーティション数は、クラスターのCPUコア数とデータサイズを考慮して決定します。一般的に、CPUコア数の2-4倍程度が推奨されますが、データサイズが小さい場合は過度なパーティションは非効率です。</p>
+                <p>Adamは、モーメンタムとRMSpropを組み合わせた適応的学習率アルゴリズムです。一次モーメンタムと二次モーメンタムの両方を考慮し、各パラメータに対して個別に学習率を調整します。実用的で効果的な最適化手法です。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> データサイズのみでは最適化できない→決定打</li>
-      <li><strong>選択肢B:</strong> メモリサイズのみでは並列性が考慮されない→致命的</li>
-      <li><strong>選択肢C:</strong> ネットワーク帯域のみではCPUリソースが無駄→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 固定学習率ではなく適応的学習率→決定打</li>
+      <li><strong>選択肢C:</strong> 方向だけでなく大きさも考慮→致命的</li>
+      <li><strong>選択肢D:</strong> バッチサイズ調整は別の機能→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1022,19 +1019,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 16</div>
-    <div class="question-text">Plotlyでインタラクティブな可視化を作成する際、パフォーマンスを向上させる方法はどれか。</div>
+    <div class="question-text">画像認識におけるデータ拡張の目的はどれか。</div>
     <div class="tags">
-      <span class="tag">#Plotly</span>
-      <span class="tag">#インタラクティブ</span>
-      <span class="tag">#パフォーマンス</span>
-      <span class="tag">#データサンプリング</span>
-      <span class="tag">#可視化</span>
+      <span class="tag">#ディープラーニングの応用</span>
+      <span class="tag">#画像認識</span>
+      <span class="tag">#データ拡張</span>
+      <span class="tag">#過学習防止</span>
+      <span class="tag">#汎化性能</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべてのデータポイントを一度に描画する</div>
-  <div class="choice" data-answer="B">データサンプリングや集約を行い、表示するデータ量を制限する</div>
-  <div class="choice" data-answer="C">すべてのアニメーションを同時に実行する</div>
-  <div class="choice" data-answer="D">高解像度の画像を大量に使用する</div>
+  <div class="choice" data-answer="A">画像の解像度を向上させる</div>
+  <div class="choice" data-answer="B">学習データを人工的に増やし、汎化性能を向上させる</div>
+  <div class="choice" data-answer="C">推論速度を高速化する</div>
+  <div class="choice" data-answer="D">メモリ使用量を削減する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -1042,15 +1039,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Plotlyでパフォーマンスを向上させるには、データサンプリングや集約を行い、表示するデータ量を適切に制限することが重要です。大量のデータポイントを一度に描画すると、ブラウザの応答が遅くなります。</p>
+                <p>データ拡張は、元の学習データに回転、反転、色調変更などの変換を加えて人工的にデータを増やし、汎化性能を向上させる手法です。過学習を防ぎ、モデルのロバスト性を高める効果があります。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 全データポイントの同時描画は非効率→決定打</li>
-      <li><strong>選択肢B:</strong> 同時アニメーション実行はパフォーマンスを悪化→致命的</li>
-      <li><strong>選択肢C:</strong> 高解像度画像大量使用はメモリを消費→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 解像度向上ではなくデータ増加→決定打</li>
+      <li><strong>選択肢C:</strong> 推論速度は別の最適化手法→致命的</li>
+      <li><strong>選択肢D:</strong> メモリ使用量は増加する→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1059,35 +1056,35 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 17</div>
-    <div class="question-text">spaCyで固有表現認識（NER）を行う際、モデルの選択基準はどれか。</div>
+    <div class="question-text">自然言語処理におけるWord2Vecの特徴はどれか。</div>
     <div class="tags">
-      <span class="tag">#spaCy</span>
-      <span class="tag">#NER</span>
-      <span class="tag">#固有表現認識</span>
-      <span class="tag">#モデル選択</span>
-      <span class="tag">#言語処理</span>
+      <span class="tag">#ディープラーニングの応用</span>
+      <span class="tag">#自然言語処理</span>
+      <span class="tag">#Word2Vec</span>
+      <span class="tag">#単語埋め込み</span>
+      <span class="tag">#分散表現</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべての言語で同じモデルを使用する</div>
-  <div class="choice" data-answer="B">対象言語とタスクに応じて適切なモデルを選択する</div>
-  <div class="choice" data-answer="C">モデルサイズが大きいほど精度が高い</div>
-  <div class="choice" data-answer="D">最新のモデルを常に使用する</div>
+  <div class="choice" data-answer="A">単語を高次元の密なベクトルで表現する</div>
+  <div class="choice" data-answer="B">単語を低次元の疎なベクトルで表現する</div>
+  <div class="choice" data-answer="C">文書全体を一つのベクトルで表現する</div>
+  <div class="choice" data-answer="D">単語の出現頻度のみを考慮する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
         <div class="answer-section">
-            <div class="correct-answer">正解: B</div>
+            <div class="correct-answer">正解: A</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>spaCyのNERでは、対象言語（英語、日本語等）とタスク（一般、医療、法律等）に応じて適切なモデルを選択する必要があります。各モデルは特定のドメインに最適化されています。</p>
+                <p>Word2Vecは、単語を高次元の密なベクトル（通常100-300次元）で表現する手法です。単語の意味的類似性がベクトル空間での距離として表現され、単語間の関係性を数学的に扱えるようになります。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 言語によってモデルが異なる→決定打</li>
-      <li><strong>選択肢B:</strong> モデルサイズと精度は必ずしも比例しない→致命的</li>
-      <li><strong>選択肢C:</strong> 最新モデルが常に最適とは限らない→本質的誤り</li>
+      <li><strong>選択肢B:</strong> 低次元疎ベクトルではなく高次元密ベクトル→決定打</li>
+      <li><strong>選択肢C:</strong> 単語レベルではなく文書レベル→致命的</li>
+      <li><strong>選択肢D:</strong> 出現頻度だけでなく文脈も考慮→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1096,19 +1093,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 18</div>
-    <div class="question-text">Pillowで画像のリサイズを行う際、アスペクト比を保持する正しい方法はどれか。</div>
+    <div class="question-text">AIの社会実装における説明可能性の重要性はどれか。</div>
     <div class="tags">
-      <span class="tag">#Pillow</span>
-      <span class="tag">#画像リサイズ</span>
-      <span class="tag">#アスペクト比</span>
-      <span class="tag">#thumbnail</span>
-      <span class="tag">#画像処理</span>
+      <span class="tag">#AIの社会実装に向けて</span>
+      <span class="tag">#説明可能性</span>
+      <span class="tag">#XAI</span>
+      <span class="tag">#透明性</span>
+      <span class="tag">#信頼性</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">resize()メソッドで直接サイズを指定する</div>
-  <div class="choice" data-answer="B">thumbnail()メソッドを使用する</div>
-  <div class="choice" data-answer="C">crop()メソッドで切り取る</div>
-  <div class="choice" data-answer="D">rotate()メソッドで回転させる</div>
+  <div class="choice" data-answer="A">AIの処理速度を向上させる</div>
+  <div class="choice" data-answer="B">AIの判断根拠を理解可能にし、信頼性と透明性を確保する</div>
+  <div class="choice" data-answer="C">AIの学習データを増やす</div>
+  <div class="choice" data-answer="D">AIの計算コストを削減する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -1116,15 +1113,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Pillowでアスペクト比を保持してリサイズするには、thumbnail()メソッドを使用します。このメソッドは、指定したサイズ内に収まるようにアスペクト比を保持してリサイズします。</p>
+                <p>説明可能性（XAI）は、AIの判断根拠を人間が理解できるようにし、信頼性と透明性を確保するために重要です。特に医療、金融、法務などの重要な意思決定において、AIの判断プロセスを説明できることが求められています。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> resize()はアスペクト比を保持しない→決定打</li>
-      <li><strong>選択肢B:</strong> crop()は切り取りでリサイズではない→致命的</li>
-      <li><strong>選択肢C:</strong> rotate()は回転でリサイズではない→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 処理速度向上は別の最適化手法→決定打</li>
+      <li><strong>選択肢C:</strong> 学習データ増加は別の改善手法→致命的</li>
+      <li><strong>選択肢D:</strong> 計算コスト削減は別の最適化手法→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1133,19 +1130,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 19</div>
-    <div class="question-text">Rayで分散処理を行う際、@ray.remoteデコレータの役割はどれか。</div>
+    <div class="question-text">AI倫理における公平性の確保について正しいのはどれか。</div>
     <div class="tags">
-      <span class="tag">#Ray</span>
-      <span class="tag">#分散処理</span>
-      <span class="tag">#@ray.remote</span>
-      <span class="tag">#リモート実行</span>
-      <span class="tag">#並列処理</span>
+      <span class="tag">#AIの社会実装に向けて</span>
+      <span class="tag">#AI倫理</span>
+      <span class="tag">#公平性</span>
+      <span class="tag">#バイアス</span>
+      <span class="tag">#差別</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">関数の実行時間を測定する</div>
-  <div class="choice" data-answer="B">関数をリモート実行可能にする</div>
-  <div class="choice" data-answer="C">関数のメモリ使用量を監視する</div>
-  <div class="choice" data-answer="D">関数のエラーハンドリングを行う</div>
+  <div class="choice" data-answer="A">全ての個人に対して同じ結果を出力する</div>
+  <div class="choice" data-answer="B">不適切な差別を避け、適切な基準に基づいて公平に判断する</div>
+  <div class="choice" data-answer="C">学習データからバイアスを完全に除去する</div>
+  <div class="choice" data-answer="D">全ての属性を無視して判断する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -1153,15 +1150,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>Rayの@ray.remoteデコレータは、通常のPython関数をリモート実行可能なタスクに変換します。これにより、関数をクラスター内の任意のノードで並列実行できます。</p>
+                <p>AI倫理における公平性は、不適切な差別を避け、適切な基準に基づいて公平に判断することです。全ての個人に同じ結果を出すのではなく、関連性のない属性（性別、人種等）による差別を避け、関連性のある属性に基づいて適切に判断することが重要です。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> 実行時間測定は別の機能→決定打</li>
-      <li><strong>選択肢B:</strong> メモリ監視は別の機能→致命的</li>
-      <li><strong>選択肢C:</strong> エラーハンドリングは別途実装が必要→本質的誤り</li>
+      <li><strong>選択肢A:</strong> 同じ結果ではなく適切な基準での公平な判断→決定打</li>
+      <li><strong>選択肢C:</strong> 完全除去は困難で適切な対処が必要→致命的</li>
+      <li><strong>選択肢D:</strong> 関連性のある属性は考慮すべき→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1170,19 +1167,19 @@
 
 <div class="question-block difficulty-medium">
     <div class="question-number">問題 20</div>
-    <div class="question-text">LIMEでモデルの局所的な説明を生成する際の制約はどれか。</div>
+    <div class="question-text">機械学習における交差検証の目的はどれか。</div>
     <div class="tags">
-      <span class="tag">#LIME</span>
-      <span class="tag">#局所的説明</span>
-      <span class="tag">#安定性</span>
-      <span class="tag">#線形近似</span>
-      <span class="tag">#モデル解釈</span>
+      <span class="tag">#AIに必要な数理・統計知識</span>
+      <span class="tag">#交差検証</span>
+      <span class="tag">#モデル評価</span>
+      <span class="tag">#汎化性能</span>
+      <span class="tag">#統計的検証</span>
     </div>
     <div class="choices">
-  <div class="choice" data-answer="A">すべてのモデルで同じ精度の説明が得られる</div>
-  <div class="choice" data-answer="B">説明の安定性に課題があり、同じ入力でも結果が変動する可能性がある</div>
-  <div class="choice" data-answer="C">大規模データセットでは必ず高速に実行される</div>
-  <div class="choice" data-answer="D">説明結果は常に人間が理解しやすい</div>
+  <div class="choice" data-answer="A">学習データを増やす</div>
+  <div class="choice" data-answer="B">モデルの汎化性能を適切に評価し、過学習を検出する</div>
+  <div class="choice" data-answer="C">学習速度を向上させる</div>
+  <div class="choice" data-answer="D">特徴量を選択する</div>
     </div>
     <details>
         <summary>解答を見る</summary>
@@ -1190,15 +1187,15 @@
             <div class="correct-answer">正解: B</div>
             <div class="explanation">
                 <div class="explanation-title">正解解説</div>
-                <p>LIMEは局所的な線形近似に基づくため、説明の安定性に課題があります。同じ入力でも、サンプリングのランダム性により結果が変動する可能性があり、複数回実行して平均を取ることが推奨されます。</p>
+                <p>交差検証は、モデルの汎化性能を適切に評価し、過学習を検出するための手法です。データを複数の分割に分けて、各分割で学習・検証を繰り返すことで、より信頼性の高い性能評価が可能になります。</p>
                 
                 <hr class="explanation-divider">
                 
                 <div class="explanation-title">誤答解説</div>
                 <ul>
-      <li><strong>選択肢A:</strong> モデルによって説明精度は異なる→決定打</li>
-      <li><strong>選択肢B:</strong> 大規模データでは計算時間が増加→致命的</li>
-      <li><strong>選択肢C:</strong> 説明結果の解釈には専門知識が必要→本質的誤り</li>
+      <li><strong>選択肢A:</strong> データ増加ではなく性能評価→決定打</li>
+      <li><strong>選択肢C:</strong> 学習速度向上は別の最適化手法→致命的</li>
+      <li><strong>選択肢D:</strong> 特徴選択は別の前処理手法→本質的誤り</li>
                 </ul>
             </div>
         </div>
@@ -1208,10 +1205,11 @@
             <footer class="footer">
                 <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: #6c757d;">
-                        <strong>作成者: fuhito.f</strong> | ライセンス: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="color: #007bff; text-decoration: underline;">CC-BY 4.0</a>
+                        <strong>作成者: fuhito.f（AI生成教材／個人作成）</strong> | ライセンス: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" style="color: #007bff; text-decoration: underline;">CC-BY 4.0</a>
                     </p>
-                    <p style="margin: 0 0 8px 0; font-size: 0.85rem; color: #6c757d;">
-                        <strong>共有時はクレジット</strong>: "G検定問題生成AI by fuhito.f" を明記
+                    <p style="font-size: 0.85rem; color: #6c757d;">
+                        本教材はCreative Commons 表示 4.0 国際 (CC BY 4.0) ライセンスで提供されます。<br>
+                        クレジット表記：「G検定問題生成AI by fuhito.f」
                     </p>
                     
                 </div>
@@ -1232,12 +1230,16 @@
                         <strong>推奨</strong>: 公式テキスト・公式問題集と併用してください
                     </p>
                 </div>
+                
+                <p style="margin-top:12px; font-size:0.8rem; color:#6c757d;">
+                    ※「G検定」は一般社団法人日本ディープラーニング協会（JDLA）の登録商標です。本教材はJDLA公式教材ではありません。
+                </p>
             </footer>
         </div>
     </main>
     
-    <!-- 印刷ボタン -->
-    <button class="print-button" onclick="window.print()" aria-label="このページを印刷">🖨️ 印刷</button>
+    <!-- 印刷ボタン（note埋め込み時は非表示） -->
+    <!-- <button class="print-button" onclick="window.print()" aria-label="このページを印刷">🖨️ 印刷</button> -->
     
     <!-- JavaScript不要: HTMLのdetailsタグで実装 -->
 </body>
